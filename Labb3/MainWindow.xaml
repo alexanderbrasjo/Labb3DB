@@ -1,0 +1,131 @@
+﻿
+    
+    <Window x:Class="Labb3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb3"
+        xmlns:UC="clr-namespace:Labb3.UserControls"
+        mc:Ignorable="d" FontFamily="Gill Sans"
+        Title="MainWindow" Height="550" Width="650" Background="Aquamarine">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="SkyBlue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Column="1"
+                   Grid.Row="1"
+                   Text="QUIZGAME"
+                   FontSize="48"
+                   FontWeight="Bold"
+                   Height="auto"
+                   Width="auto"
+                   Grid.ColumnSpan="1"
+                   HorizontalAlignment="Center"/>
+        
+        <Image 
+                x:Name="QuestionImage" 
+                Grid.Column="1" 
+                Grid.Row="2" 
+                MaxHeight="150" 
+                MaxWidth="200" 
+                Source="\Images\quiz.png"/>
+        
+        <Button x:Name="btnStartNewQuiz"
+                Content="Start New Quiz"
+                Grid.Column="1"
+                Grid.Row="3"
+                Width="320"
+                FontSize="30"
+                Height="auto"
+                FontWeight="DemiBold"
+                Margin="0,20,0,0"
+                Style="{StaticResource RoundedButtonStyle}"
+                HorizontalAlignment="Center" 
+                Click="btnStartNewQuiz_Click"/>
+        
+        <Button x:Name="btnEditQuiz"
+                Content="Edit Questions"
+                Grid.Column="1"
+                Grid.Row="4"
+                Width="320"
+                FontSize="30"
+                Height="auto"
+                FontWeight="DemiBold"
+                Margin="0,20,0,0"
+                Style="{StaticResource RoundedButtonStyle}"
+                HorizontalAlignment="Center" 
+                Click="btnEditQuestions_Click"/>
+
+        <Button x:Name="btnCreateNewQuiz"
+                Content="Create New Quiz"
+                Grid.Column="1"
+                Grid.Row="5"
+                Width="320"
+                FontSize="30"
+                Height="auto"
+                FontWeight="DemiBold"
+                Margin="0,20,0,0"
+                Style="{StaticResource RoundedButtonStyle}"
+                HorizontalAlignment="Center"
+                Click="btnCreateNewQuiz_Click"/>
+        
+
+        <Button x:Name="btnExitGame"
+                Content="Exit Game"
+                Grid.Column="1"
+                Grid.Row="6"
+                Width="320"
+                FontSize="30"
+                Height="auto"
+                FontWeight="DemiBold"
+                Margin="0,20,0,0"
+                HorizontalAlignment="Center" 
+                Click="btnExitGame_Click"
+                Style="{StaticResource RoundedButtonStyle}">
+                
+        </Button>
+
+
+    </Grid>
+</Window>

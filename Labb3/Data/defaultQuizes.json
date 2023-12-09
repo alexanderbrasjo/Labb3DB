@@ -1,0 +1,233 @@
+﻿[
+
+  {
+    "Title": "SportQuiz",
+    "Category": "Sport",
+    "Questions": [
+      {
+        "Category": "Sport",
+        "Statement": "In which sport do players use a shuttlecock?",
+        "Answers": [ "Tennis", "Badminton", "Squash" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "Who holds the record for the most home runs in a single MLB season?",
+        "Answers": [ "Babe Ruth", "Barry Bonds", "Sammy Sosa" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "What is the maximum number of players a standard soccer team can have on the field during a match?",
+        "Answers": [ "9", "10", "11" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "Which country won the most gold medals in the 2016 Summer Olympics?",
+        "Answers": [ "USA", "China", "Great Britain" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "In which city was the first modern Olympic Games held?",
+        "Answers": [ "Athens", "Paris", "London" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "What is the diameter of a standard basketball hoop in inches?",
+        "Answers": [ "16 inches", "18 inches", "20 inches" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "Which team has won the most Super Bowl championships in NFL history?",
+        "Answers": [ "San Francisco 49ers", "New England Patriots", "Pittsburgh Steelers" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "What is the term for a one-run hit in baseball that results in the batter reaching first base safely?",
+        "Answers": [ "Home run", "Single", "Double" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "Which country won the FIFA World Cup in 2018?",
+        "Answers": [ "Brazil", "Germany", "France" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\sport.png"
+      },
+      {
+        "Category": "Sport",
+        "Statement": "How many players are there on a standard ice hockey team?",
+        "Answers": [ "5", "6", "7" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\sport.png"
+      }
+    ]
+  },
+  {
+    "Title": "GeographyQuiz",
+    "Category": "Geography",
+    "Questions": [
+      {
+        "Category": "Geography",
+        "Statement": "What is the capital of France?",
+        "Answers": [ "London", "Berlin", "Paris" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "Which continent is the largest by land area?",
+        "Answers": [ "Africa", "Asia", "North America" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "What is the longest river in the world?",
+        "Answers": [ "Nile", "Amazon", "Mississippi" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "Which country is known as the Land of the Rising Sun?",
+        "Answers": [ "China", "Japan", "South Korea" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "What is the largest desert in the world?",
+        "Answers": [ "Sahara", "Gobi", "Antarctica" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "Which European city is often called the Venice of the North?",
+        "Answers": [ "Amsterdam", "Stockholm", "Venice" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "What is the highest mountain in the world?",
+        "Answers": [ "Mount Kilimanjaro", "Mount Everest", "Mount Fuji" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "Which country is the smallest in terms of land area?",
+        "Answers": [ "Russia", "Monaco", "Canada" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "What is the largest ocean in the world?",
+        "Answers": [ "Indian Ocean", "Atlantic Ocean", "Pacific Ocean" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\geography.png"
+      },
+      {
+        "Category": "Geography",
+        "Statement": "Which river is known as the Yellow River?",
+        "Answers": [ "Nile", "Yangtze", "Mekong" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\geography.png"
+      }
+    ]
+  },
+  {
+    "Title": "MathQuiz",
+    "Category": "Math",
+    "Questions": [
+      {
+        "Category": "Math",
+        "Statement": "What is the result of 5 + 7?",
+        "Answers": [ "10", "11", "12" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "Solve for x: 3x - 2 = 10",
+        "Answers": [ "x = 4", "x = 5", "x = 6" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "What is the square root of 16?",
+        "Answers": [ "2", "4", "8" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "Find the area of a rectangle with length 6 and width 4.",
+        "Answers": [ "12", "18", "24" ],
+        "CorrectAnswer": 2,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "Simplify: (2x + 3x) - (x + 5x)",
+        "Answers": [ "-5x", "3x", "5x" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "What is the value of π (pi) to two decimal places?",
+        "Answers": [ "3.14", "3.16", "3.18" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "Calculate 25% of 80.",
+        "Answers": [ "10", "20", "25" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "Find the hypotenuse of a right triangle with legs of length 3 and 4.",
+        "Answers": [ "5", "7", "9" ],
+        "CorrectAnswer": 0,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "What is the result of 8 multiplied by 9?",
+        "Answers": [ "64", "72", "80" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\math.png"
+      },
+      {
+        "Category": "Math",
+        "Statement": "Solve for y: 2y + 7 = 15",
+        "Answers": [ "y = 4", "y = 5", "y = 6" ],
+        "CorrectAnswer": 1,
+        "Image": "\\Images\\math.png"
+      }
+    ]
+  }
+
+
+]

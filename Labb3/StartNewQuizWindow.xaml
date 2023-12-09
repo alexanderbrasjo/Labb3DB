@@ -1,0 +1,166 @@
+﻿<Window x:Class="Labb3.StartNewQuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb3"
+        mc:Ignorable="d" FontFamily="Gill Sans"
+        Title="StartNewQuizWindow" Height="550" Width="650" Background="Aquamarine">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="SkyBlue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock 
+            Grid.Column="1" 
+            Grid.Row="1"
+            Grid.ColumnSpan="5"
+            Text="QUIZGAME"
+            FontSize="48"
+            FontWeight="Bold"
+            HorizontalAlignment="Center"/>
+        <Button
+            x:Name="btnPlayRandom"
+            Grid.Column="1"
+            Grid.ColumnSpan="5"
+            Grid.Row="2"
+            Width="350"
+            Height="auto"
+            FontSize="24"
+            FontWeight="DemiBold"
+            Content="PLAY RANDOM QUIZ"
+            HorizontalAlignment="Center"
+            Style="{StaticResource RoundedButtonStyle}"
+            Margin="0,20,0,0" Click="btnPlayRandom_Click"/>
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="3"
+            Grid.ColumnSpan="5"
+            Text="CHOOSE A QUIZ!"
+            FontSize="18"
+            FontWeight="DemiBold"
+            HorizontalAlignment="Center"
+            Margin="0,20,0,0"/>
+        <ComboBox 
+            x:Name="cbbQuizChoose" 
+            Grid.Column="1" 
+            Grid.Row="4" 
+            Grid.ColumnSpan="5"
+            Height="30"
+            Margin="0,10,0,0" 
+            SelectionChanged="cbbQuizChoose_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="5"
+            Grid.ColumnSpan="5"
+            Text="OR CHOOSE BY CATEGORY (YOU CAN CHOOSE MORE THAN ONE)!"
+            FontSize="12"
+            FontWeight="DemiBold"
+            HorizontalAlignment="Center"
+            Margin="0,10,0,0"/>
+
+        <ListBox 
+            x:Name="lbxCategoryChoose" 
+            Grid.Column="1" 
+            Grid.Row="6" 
+            Grid.ColumnSpan="5"
+            Height="100"
+            SelectionMode="Multiple"
+            Margin="0,10,0,0" 
+            SelectionChanged="lbxCategoryChoose_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button
+            x:Name="btnStartQuiz"
+            Grid.Column="1"
+            Grid.ColumnSpan="5"
+            Grid.Row="7"
+            Width="310"
+            Height="auto"
+            FontSize="24"
+            FontWeight="DemiBold"
+            Content="START QUIZ"
+            HorizontalAlignment="Center"
+            Style="{StaticResource RoundedButtonStyle}"
+            Margin="0,20,0,0" 
+            IsEnabled="False"
+            Click="btnStartQuiz_Click"
+            />
+        <Button
+            x:Name="btnMainMenu"
+            Grid.Column="1"
+            Grid.ColumnSpan="5"
+            Grid.Row="8"
+            Width="310"
+            Height="auto"
+            FontSize="24"
+            FontWeight="DemiBold"
+            Content="MAIN MENU"
+            HorizontalAlignment="Center"
+            Style="{StaticResource RoundedButtonStyle}"
+            Margin="0,20,0,0" Click="btnMainMenu_Click"/>
+    </Grid>
+</Window>
